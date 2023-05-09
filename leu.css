@@ -1,0 +1,171 @@
+*{ 
+   margin:0;
+   padding:0;
+   font-family: 'Castoro Titling', cursive;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("leu.jpg");
+    background-position: center;
+    background-size: cover;
+    position: realtive;
+}
+
+
+menu{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;}
+
+.menu-bar{
+   flex:1;
+   text-align:right;
+}
+
+.menu-bar ul li{
+   list-style:none;
+   display:inline-block;
+   padding: 8px 12px;
+   position: relative;
+
+}
+.menu-bar ul li a{ 
+   color:#fff;
+   text-decoration: none;
+   font-size: 20px;
+   }
+.menu-bar ul li::after{
+   content:'';
+   width: 0%;
+   height:2px;
+   background: #f44336;
+   display: block;
+   margin: auto;
+   transition:0.5s;}
+
+.menu-bar ul li:hover::after{
+   width:100%;}
+
+.text-box{
+  width:50%;
+  color:#fff;
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+.text-box h1{
+  font-size: 62px;
+}
+
+@media(max-width:700px){
+   .text-box h1{
+  font-size: 20px;
+} 
+.menu-bar ul li{
+   display:block;
+}
+
+.menu-bar{
+  position:absolute;
+  background:#f44336;
+  height:100vh;
+  width:200px;
+  top:0;
+  rigth:0;
+  text-align:left;
+  z-index:2;
+}
+}
+
+.menu-bar ul li a{
+  text-decoration:none;
+  color:#fff;
+} 
+.sub-menu-1
+{
+   display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{ display:block;
+  position:absolute;
+  background:rgb(0,0,0);
+  margin-left: -15px;
+
+}
+
+.menu-bar ul li:hover.sub-menu-1 ul 
+{
+ display:block;
+ margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{ width:150px;
+  padding:10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+ border-bottom: nonel;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{ color:#9999FF;}
+
+.descriere-1{
+   width:80%;
+   margin:auto;
+   text-align:center;
+   padding-top:100px;
+}
+h1{ font-size:36px;
+    font-weight:600;}
+h2{ font-size:36px;
+    font-weight:600;}
+h3{ font-size:36px;
+    font-weight:600;
+    text-align:center;
+    }
+h4{font-size:36px;
+   font-weight:600;}
+h5{font-size:36px;
+   font-weight:600;}
+h6{font-size:36px;
+   font-weight:600;}
+.row{
+   margin-top:5%;
+   display:flex;
+   justify-content:space-between;
+   border-radius:10px;
+   margin-bottom:30px;
+   positon:relative;
+   overflow:hidden; }
+.berbeci-celebri-col
+{  flex-basis:31%;
+   border-radius:10px;
+   margin-bottom:5%;
+   padding:20px 12px;
+   box-sizing:border-box;}
+.berbeci-celebri-col img{
+   width:100%;}
+
+.Personalitate{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 50px;}
+p{ font-size:20px;}
+.profesii{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 50px;
+}
+p{ font-size:20px;}
